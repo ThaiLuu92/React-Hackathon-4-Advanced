@@ -1,38 +1,100 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 .App {
-  text-align: center;
+  background-color: #F0F2F5;
+  height: 100vh;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header {
+  padding: 40px 100px;
+  text-align: right;
+  font-size: 50px;
+  position: relative;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header  .icon-cart {
+  cursor: pointer;
 }
+#total-item {
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  position: absolute ;
+  top:30px;
+  right: 80px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+}
+main {
+  display: flex;
+  gap: 5px;
+}
+.product-card {
+  margin-left: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  max-width: 250px;
+  gap: 20px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.product-stock {
+  padding: 0 10px;
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.icon {
+  font-size: 25px;
+}
+.product-image {
+  max-height: 250px;
+  height: 150px;
+}
+.product-image img{
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  object-position: center;
 }
 
-.App-link {
-  color: #61dafb;
+.product-info {
+
+ margin-top: 10px;
+ display: flex;
+ flex-direction: column;
+ gap: 10px;
+ margin-bottom: 10px;
+}
+.product-name,.product-price {
+  padding: 0 10px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.product-info > * {
+  padding: 0 10px;
 }
+
+.icon-heart {
+  font-size: 20px;
+}
+
+.btn {
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+}
+
+
